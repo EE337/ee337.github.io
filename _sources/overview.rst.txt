@@ -1,0 +1,23 @@
+***************
+Course Overview
+***************
+
+These pages contain information about the EE337 Microprocessor Lab course running in the `Department of Electrical Engineering <https://www.ee.iitb.ac.in>`_ of `IIT Bombay <https://www.iitb.ac.in/>`_.
+
+
+==================
+Course Instructors
+==================
+
+- Faculty
+    - Rajbabu Velmurugan
+    - Saravanan Vijayakumaran
+    - Sachin B. Patkar
+    - Dinesh K. Sharma
+
+- Staff
+    - Mahesh Bhaganagare
+    - Ms. Madhumita Date
+
+- Teaching Assistants
+    - TBA
