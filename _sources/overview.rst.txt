@@ -2,8 +2,13 @@
 Course Overview
 ***************
 
-These pages contain information about the EE337 Microprocessor Lab course running in the `Department of Electrical Engineering <https://www.ee.iitb.ac.in>`_ of `IIT Bombay <https://www.iitb.ac.in/>`_.
+This is the course webpage for the EE337 Microprocessor Lab course running in the `Department of Electrical Engineering <https://www.ee.iitb.ac.in>`_ of `IIT Bombay <https://www.iitb.ac.in/>`_.
 
+**NOTE**: *The following slide deck is a placeholder. It will be updated soon.*
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/8fNlf8BMP2tWG9" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
 
 ==================
 Course Instructors
