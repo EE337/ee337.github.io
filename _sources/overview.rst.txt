@@ -8,7 +8,20 @@ This is the course webpage for the EE337 Microprocessor Lab course running in th
 
 .. raw:: html
 
-    <iframe src="//www.slideshare.net/slideshow/embed_code/key/8fNlf8BMP2tWG9" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/8fNlf8BMP2tWG9" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above slide deck is available :download:`here <_static/CourseIntroduction-2018.pdf>`.
+
+==================
+Course Schedule
+==================
+
+- Third year students
+    Wednesdays, 2pm to 5pm
+
+- Second year students
+    L1
+
 
 ==================
 Course Instructors
