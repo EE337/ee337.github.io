@@ -11,6 +11,7 @@ EE337 Microprocessor Lab
    :caption: Contents:
 
    overview
+   tools
    pt51
    dks
 
