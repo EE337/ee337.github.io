@@ -8,7 +8,7 @@ This is the course webpage for the EE337 Microprocessor Lab course running in th
 
   <iframe src="//www.slideshare.net/slideshow/embed_code/key/t5r9TjCXNSBgy0" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
 
-The pdf of the above slid deck is available :download:`here <_static/EE337_Course_Introduction.pdf>`.
+The pdf of the above slide deck is available :download:`here <_static/EE337_Course_Introduction.pdf>`.
 
 ==================
 Course Schedule
@@ -18,7 +18,7 @@ Course Schedule
     Wednesdays, 2pm to 5pm
 
 - Second year students
-    TBA
+    Mondays, 2pm to 5pm
 
 
 ==================
