@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -26,10 +26,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -175,7 +175,7 @@
 </div>
 <div class="section" id="hex-file-creation-in-keil">
 <h3>Hex File Creation in Keil<a class="headerlink" href="#hex-file-creation-in-keil" title="Permalink to this headline">¶</a></h3>
-<p>The following slide deck has instructions on creating Hex files using the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/bcd51ce0521267ad0218bf72586445e8/HexFileForKeil.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<p>The following slide deck has instructions on creating Hex files using the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/89af161df02a184aff08946762cde33c/HexFileForKeil.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/ckKDaBtn7d4OE6" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe><div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
@@ -183,24 +183,25 @@
 </div>
 <div class="section" id="debugging-in-keil">
 <h3>Debugging in Keil<a class="headerlink" href="#debugging-in-keil" title="Permalink to this headline">¶</a></h3>
-<p>The following slide deck has instructions on debugging programs with the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/83cc7abbabd3d1510f176fb5583334cd/Keil-DebuggingPrograms.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<p>The following slide deck has instructions on debugging programs with the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/b18a435f4db1ce9439350616672ad80c/Keil-DebuggingPrograms.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/NTvZQHod7vd2xg" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe><div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="admonition-title">Note</p>
 <p>If Keil µVision keeps crashing on pressing the <code class="docutils literal notranslate"><span class="pre">Start\stop</span> <span class="pre">debug</span> <span class="pre">session</span></code>, then follow these steps.</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li>Right click on the target folder (at the left pane).</li>
-<li>Select <code class="docutils literal notranslate"><span class="pre">Target</span> <span class="pre">options</span> <span class="pre">&gt;</span> <span class="pre">Debug</span></code></li>
-<li>Change the <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> field to the right of <code class="docutils literal notranslate"><span class="pre">Dialog</span> <span class="pre">DLL</span></code> with text <code class="docutils literal notranslate"><span class="pre">DP51.DLL</span></code> to <code class="docutils literal notranslate"><span class="pre">-p51</span></code>.</li>
-<li>Tick the <code class="docutils literal notranslate"><span class="pre">Limit</span> <span class="pre">Speed</span> <span class="pre">to</span> <span class="pre">Real-Time</span></code> checkbox.</li>
+<li><p>Right click on the target folder (at the left pane).</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Target</span> <span class="pre">`&lt;TargetName&gt;`</span></code>.</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Debug</span></code> pane.</p></li>
+<li><p>Change the <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> field to the right of <code class="docutils literal notranslate"><span class="pre">Dialog</span> <span class="pre">DLL</span></code> with text <code class="docutils literal notranslate"><span class="pre">DP51.DLL</span></code> to <code class="docutils literal notranslate"><span class="pre">-p51</span></code>.</p></li>
+<li><p>Tick the <code class="docutils literal notranslate"><span class="pre">Limit</span> <span class="pre">Speed</span> <span class="pre">to</span> <span class="pre">Real-Time</span></code> checkbox.</p></li>
 </ol>
 </div></blockquote>
 <p>See the below screenshot.</p>
-<img alt="_images/debugger.png" class="last" src="_images/debugger.png" />
+<img alt="_images/debugger.png" src="_images/debugger.png" />
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
