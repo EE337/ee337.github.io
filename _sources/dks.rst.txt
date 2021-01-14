@@ -41,3 +41,13 @@ The pdf of the above notes is available :download:`here <_static/Timers.pdf>`.
     <iframe src="//www.slideshare.net/slideshow/embed_code/key/iRrpPMicNmlbiN" width="668" height="900" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 The pdf of the above notes is available :download:`here <_static/Serial.pdf>`.
+
+================================
+Intel Hex Format
+================================
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/2YhB0l7GYEhgmW" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above slide deck is available :download:`here <_static/intel-hex.pdf>`.
