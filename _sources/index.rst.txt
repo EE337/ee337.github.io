@@ -15,6 +15,7 @@ EE337 Microprocessor Lab
    tools
    pt51
    dks
+   faq
 
 
 ..
