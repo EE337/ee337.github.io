@@ -14,6 +14,11 @@ An *non-integrated* workflow would be where different tools are used for differe
 
 To **download the Keil IDE**, you will need to register at `https://www.keil.com/demo/eval/c51.htm <https://www.keil.com/demo/eval/c51.htm>`_
 
+-Linux users will install Keil using Wine
+	- Install wine :Type "sudo apt install wine-stable" in the terminal
+	- Open a terminal in the folder where c51v960a.exe w
+		-Type "wine c51v960a.exe"
+
 At a high-level description, the Keil IDE workflow is as follows:
 
   #. Create a new project.
@@ -62,6 +67,7 @@ The following slide deck has instructions on debugging programs with the Keil µ
 
 |
 |
+
 
 .. note:: If Keil µVision keeps crashing on pressing the ``Start\stop debug session``, then follow these steps.
 
