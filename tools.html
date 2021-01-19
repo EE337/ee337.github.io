@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html4" lang="en" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -26,10 +26,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -89,6 +89,7 @@
 <li class="toctree-l1"><a class="reference internal" href="s2.html">Section 2 (3rd yr UG)</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Development Tools</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#keil-vision-ide">Keil µVision IDE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#download-and-installation">Download and Installation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#getting-started-with-keil-vision-ide">Getting Started with Keil µVision IDE</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#debugging-in-keil">Debugging in Keil</a></li>
 </ul>
@@ -169,26 +170,49 @@
 <span id="keil-ide"></span><h2>Keil µVision IDE<a class="headerlink" href="#keil-vision-ide" title="Permalink to this headline">¶</a></h2>
 <p>Keil µVision is an integrated development environment (IDE) for editing, compiling, running, and debugging programs for the 8051 microcontroller. It is <em>integrated</em> in the sense that the same environment is used to perform all these tasks. For loading programs into the 8051 microcontroller, we will need the <a class="reference internal" href="#flip-tool"><span class="std std-ref">FLIP</span></a> tool.</p>
 <p>An <em>non-integrated</em> workflow would be where different tools are used for different tasks. For example, Visual Studio Code could be used for editing the program and a command line compiler could be used to compile the program.</p>
-<p>To <strong>download the Keil IDE</strong>, you will need to register at <a class="reference external" href="https://www.keil.com/demo/eval/c51.htm">https://www.keil.com/demo/eval/c51.htm</a></p>
 <p>At a high-level description, the Keil IDE workflow is as follows:</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li>Create a new project.</li>
-<li>Specify the target device while creating the project.</li>
-<li>Create a new source file in the project.</li>
-<li>Build the project.</li>
-<li>Fix any compilation errors and rebuild.</li>
-<li>Once program compiles without errors, use the debugger to check correctness of execution.</li>
+<li><p>Create a new project.</p></li>
+<li><p>Specify the target device while creating the project.</p></li>
+<li><p>Create a new source file in the project.</p></li>
+<li><p>Build the project.</p></li>
+<li><p>Fix any compilation errors and rebuild.</p></li>
+<li><p>Once program compiles without errors, use the debugger to check correctness of execution.</p></li>
 </ol>
 </div></blockquote>
 <p>See the slide deck and video in the following section for more detailed instructions.</p>
 <div class="line-block">
 <div class="line"><br /></div>
+</div>
+<div class="section" id="download-and-installation">
+<h3>Download and Installation<a class="headerlink" href="#download-and-installation" title="Permalink to this headline">¶</a></h3>
+<p>To <strong>download the Keil IDE</strong>, you will need to register at <a class="reference external" href="https://www.keil.com/demo/eval/c51.htm">https://www.keil.com/demo/eval/c51.htm</a></p>
+<p><strong>Windows users</strong> can install Keil by simply double-clicking the downloaded file.</p>
+<p><strong>Linux users</strong> will need to install Keil using <a class="reference external" href="https://www.winehq.org/">Wine</a>.</p>
+<ul>
+<li><p>On Ubuntu, install Wine by running the following command. Use the relevant package manager for other Linux distributions.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install wine-stable
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Run the following command in the folder where c51v960a.exe was downloaded.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wine c51v960a.exe
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+<div class="line-block">
 <div class="line"><br /></div>
+</div>
 </div>
 <div class="section" id="getting-started-with-keil-vision-ide">
 <h3>Getting Started with Keil µVision IDE<a class="headerlink" href="#getting-started-with-keil-vision-ide" title="Permalink to this headline">¶</a></h3>
-<p>The following slide deck has an introduction to using the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/63b013761eb1058e7de987805d83a6be/Getting_Started_with_Keil_uVision_2020.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<p>The following slide deck has an introduction to using the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/2ab32595ef80c2f885554d4c5aa01b08/Getting_Started_with_Keil_uVision_2020.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/1SB7pnnJUBvuhf" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe><div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
@@ -201,25 +225,25 @@
 </div>
 <div class="section" id="debugging-in-keil">
 <h3>Debugging in Keil<a class="headerlink" href="#debugging-in-keil" title="Permalink to this headline">¶</a></h3>
-<p>The following slide deck has instructions on debugging programs with the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/83cc7abbabd3d1510f176fb5583334cd/Keil-DebuggingPrograms.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<p>The following slide deck has instructions on debugging programs with the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/b18a435f4db1ce9439350616672ad80c/Keil-DebuggingPrograms.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/NTvZQHod7vd2xg" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe><div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="admonition-title">Note</p>
 <p>If Keil µVision keeps crashing on pressing the <code class="docutils literal notranslate"><span class="pre">Start\stop</span> <span class="pre">debug</span> <span class="pre">session</span></code>, then follow these steps.</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li>Right click on the target folder (at the left pane).</li>
-<li>Select <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Target</span> <span class="pre">`&lt;TargetName&gt;`</span></code>.</li>
-<li>Select the <code class="docutils literal notranslate"><span class="pre">Debug</span></code> pane.</li>
-<li>Change the <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> field to the right of <code class="docutils literal notranslate"><span class="pre">Dialog</span> <span class="pre">DLL</span></code> with text <code class="docutils literal notranslate"><span class="pre">DP51.DLL</span></code> to <code class="docutils literal notranslate"><span class="pre">-p51</span></code>.</li>
-<li>Tick the <code class="docutils literal notranslate"><span class="pre">Limit</span> <span class="pre">Speed</span> <span class="pre">to</span> <span class="pre">Real-Time</span></code> checkbox.</li>
+<li><p>Right click on the target folder (at the left pane).</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Target</span> <span class="pre">`&lt;TargetName&gt;`</span></code>.</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Debug</span></code> pane.</p></li>
+<li><p>Change the <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> field to the right of <code class="docutils literal notranslate"><span class="pre">Dialog</span> <span class="pre">DLL</span></code> with text <code class="docutils literal notranslate"><span class="pre">DP51.DLL</span></code> to <code class="docutils literal notranslate"><span class="pre">-p51</span></code>.</p></li>
+<li><p>Tick the <code class="docutils literal notranslate"><span class="pre">Limit</span> <span class="pre">Speed</span> <span class="pre">to</span> <span class="pre">Real-Time</span></code> checkbox.</p></li>
 </ol>
 </div></blockquote>
 <p>See the below screenshot.</p>
-<img alt="_images/debugger.png" class="last" src="_images/debugger.png" />
+<img alt="_images/debugger.png" src="_images/debugger.png" />
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
