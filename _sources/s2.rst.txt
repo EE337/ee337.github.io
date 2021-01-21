@@ -14,4 +14,14 @@ See the resources in :ref:`keil-ide` and attempt the experiments in the followin
 
 The pdf of the above lab sheet is available :download:`here <_static/lab1-s2.pdf>`.
 
+=====
+Lab 2
+=====
+Get more familiar with the instruction set of 8051.
+
+.. raw:: html
+
+  <iframe src="//www.slideshare.net/slideshow/embed_code/key/tXxhSJdTJpg9dp" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is avaliable :download:`here <_static/lab2-s2.pdf>`.
 
