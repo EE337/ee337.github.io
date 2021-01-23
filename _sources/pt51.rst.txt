@@ -3,14 +3,14 @@ Pt-51 Board Resources
 *********************
 
 ======================
-Operating Instructions
+User Manual
 ======================
 
 .. raw:: html
 
-    <iframe src="//www.slideshare.net/slideshow/embed_code/key/hpZHnhI1S24GNk" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/DPbIbtknoE3YHU" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
-The pdf of the above slide deck is available :download:`here <_static/CourseIntroduction-2018.pdf>`.
+The pdf of the above slide deck is available :download:`here <_static/PT-51_Ver_1.3_User_Manual.pdf>`.
 
 ======================
 AT89C5131 Datasheet

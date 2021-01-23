@@ -105,5 +105,10 @@ The following slide deck has instructions on debugging programs with the Keil µ
 ================================
 FLIP
 ================================
+Pt-51 board device driver installation instructions
 
-**TODO**
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/lPQWPiR58rvvem" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above slide deck is available :download:`here <_static/FLIP_and_Device_driver_installation.pdf>`.
