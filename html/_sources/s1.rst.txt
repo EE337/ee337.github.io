@@ -1,0 +1,29 @@
+********************************
+Section 1 (2nd yr UG)
+********************************
+
+=====
+Lab 1
+=====
+
+See the resources in :ref:`keil-ide` and attempt the experiments in the following lab sheet. 
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/eHqBMamvh9dhPy" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here <_static/lab1-s1.pdf>`.
+
+=====
+Lab 2
+=====
+Continuing to look at more instructions from the ISA of 8051.
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/ySWhOdlv78ZXPi" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here <_static/lab2-s1.pdf>`.
+
+
+

@@ -1,0 +1,53 @@
+**********************************
+Prof. Dinesh K Sharma's 8051 Notes
+**********************************
+
+================================
+Introduction to Microcontrollers
+================================
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/y6Xk6Ni3JYCacL" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above slide deck is available :download:`here <_static/8051-arch.pdf>`.
+
+================================
+8051 Interrupts
+================================
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/xwPRFog7VY0KLA" width="668" height="900" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above notes is available :download:`here <_static/Interrupts.pdf>`.
+
+================================
+8051 Timers
+================================
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/bv48K0LMnI04sg" width="668" height="900" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above notes is available :download:`here <_static/Timers.pdf>`.
+
+================================
+8051 Serial IO
+================================
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/iRrpPMicNmlbiN" width="668" height="900" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above notes is available :download:`here <_static/Serial.pdf>`.
+
+================================
+Intel Hex Format
+================================
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/2YhB0l7GYEhgmW" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above slide deck is available :download:`here <_static/intel-hex.pdf>`.

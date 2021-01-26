@@ -1,0 +1,63 @@
+***************
+Course Overview
+***************
+
+This is the course webpage for the EE337 Microprocessor Lab course running in the `Department of Electrical Engineering <https://www.ee.iitb.ac.in>`_ of `IIT Bombay <https://www.iitb.ac.in/>`_.
+
+.. raw:: html
+
+  <iframe src="//www.slideshare.net/slideshow/embed_code/key/4bqs5XHsdFWDTL" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above slide deck is available :download:`here <_static/EE337_Course_Introduction.pdf>`.
+
+==================
+Course Schedule
+==================
+
+- Third year students
+    Wednesdays, 2pm to 5pm
+
+- Second year students
+    Mondays, 2pm to 5pm
+
+
+==================
+Course Instructors
+==================
+
+- Faculty
+    - Rajbabu Velmurugan
+    - Saravanan Vijayakumaran
+    - Sachin B. Patkar
+    - Dinesh K. Sharma
+
+- Staff
+    - Mahesh Bhaganagare
+    - Ms. Madhumita Date
+
+- Teaching Assistants
+    - Vaddi Reddy Joseph Jeevan Reddy
+    - Ekatpure Rutuja Dattatray 
+    - Swadha Sanghvi 
+    - Nilesh Baviskar 
+    - Ashish Singhariya 
+    - Devesh Kumar 
+    - Bhuyashi Deka 
+    - Rashmi R 
+    - Sancho Simmy Louis 
+    - Sabitha Susan Joseph 
+    - Aditya Ajay Wani 
+    - Gajulapalli Venkata Naga Dinesh Kumar 
+    - Prashant Sharma 
+    - Shah Vidur 
+    - Nijil George 
+    - Pampatwar Akshay 
+    - Nihar Himanshu Shah 
+    - Abhinav Sridhar Visalakshi 
+    - Rohit Madhukar Kale 
+    - Vikash Kumar 
+    - Arjun Raj 
+    - Sarvesh Shirish Kale 
+    - Nikhil Ajith 
+    - Vivekanand Ramrao Dhakane 
+
