@@ -90,7 +90,7 @@ The following slide deck has instructions on debugging programs with the Keil µ
     1. Right click on the target folder (at the left pane). 
     2. Select ``Options for Target `<TargetName>```.
     3. Select the ``Debug`` pane. 
-    4. Change the ``Parameter`` field to the right of ``Dialog DLL`` with text ``DP51.DLL`` to ``-p51``.
+    4. Change the ``Parameter`` field to the right of ``Dialog DLL`` with text ``-p5131`` to ``-p51``.
     5. Tick the ``Limit Speed to Real-Time`` checkbox.
 
   See the below screenshot.
