@@ -12,6 +12,37 @@ User Manual
 
 The pdf of the above slide deck is available :download:`here <_static/PT-51_Ver_1.3_User_Manual.pdf>`.
 
+=============================
+Programming and Testing 
+=============================
+
+Running a Hex file on Pt-51
+---------------------------
+Assuming that you have installed :ref:`keil-ide` and :ref:`flip-tool` tools successfully.
+
+#. Download this assembly file and compile it to generate the hex file for a simple LED test. :download:`led.hex <_static/led.asm>`.
+
+#. Take a look at the video below for the procedure to dump a hex file that will be executed on the Pt-51 kit.
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JPBnxZETjGo" frameborder="0" allowfullscreen></iframe> 
+
+Completing, the above two steps lets you test the LEDs on Pt-51 kit. This is a quick check of the Pt-51 kit and installed tools.
+
+
+Testing the peripherals of Pt-51
+------------------------------------
+A test file has been developed to test all the peripherals of Pt-51.
+
+#. Download this test file. :download:`pt51_test.hex <_static/pt51_test.hex>`.
+#. Program the Pt-51 using the downloaded pt51_test file.
+#. Details of the peripherals being tested and their success/failure can be understood from this set of slides. Make sure all the tests run successfully.
+
+.. raw:: html
+
+      <iframe src="//www.slideshare.net/slideshow/embed_code/key/LFKP3HCncYRSa" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
 ======================
 AT89C5131 Datasheet
 ======================

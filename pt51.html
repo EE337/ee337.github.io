@@ -92,6 +92,11 @@
 <li class="toctree-l1"><a class="reference internal" href="tools.html">Development Tools</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Pt-51 Board Resources</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#user-manual">User Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#programming-and-testing">Programming and Testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#running-a-hex-file-on-pt-51">Running a Hex file on Pt-51</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#testing-the-peripherals-of-pt-51">Testing the peripherals of Pt-51</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#at89c5131-datasheet">AT89C5131 Datasheet</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#instruction-set">8051 Instruction Set</a></li>
 </ul>
@@ -169,6 +174,27 @@
 <div class="section" id="user-manual">
 <h2>User Manual<a class="headerlink" href="#user-manual" title="Permalink to this headline">¶</a></h2>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/DPbIbtknoE3YHU" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe><p>The pdf of the above slide deck is available <a class="reference download internal" download="" href="_downloads/8acca178b149fd2a1a759d2d72ff4ddc/PT-51_Ver_1.3_User_Manual.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+</div>
+<div class="section" id="programming-and-testing">
+<h2>Programming and Testing<a class="headerlink" href="#programming-and-testing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="running-a-hex-file-on-pt-51">
+<h3>Running a Hex file on Pt-51<a class="headerlink" href="#running-a-hex-file-on-pt-51" title="Permalink to this headline">¶</a></h3>
+<p>Assuming that you have installed <a class="reference internal" href="tools.html#keil-ide"><span class="std std-ref">Keil µVision IDE</span></a> and <a class="reference internal" href="tools.html#flip-tool"><span class="std std-ref">FLIP</span></a> tools successfully.</p>
+<ol class="arabic simple">
+<li><p>Download this assembly file and compile it to generate the hex file for a simple LED test. <a class="reference download internal" download="" href="_downloads/280c3564174395c8634016c198bf8d2a/led.asm"><code class="xref download docutils literal notranslate"><span class="pre">led.hex</span></code></a>.</p></li>
+<li><p>Take a look at the video below for the procedure to dump a hex file that will be executed on the Pt-51 kit.</p></li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JPBnxZETjGo" frameborder="0" allowfullscreen></iframe><p>Completing, the above two steps lets you test the LEDs on Pt-51 kit. This is a quick check of the Pt-51 kit and installed tools.</p>
+</div>
+<div class="section" id="testing-the-peripherals-of-pt-51">
+<h3>Testing the peripherals of Pt-51<a class="headerlink" href="#testing-the-peripherals-of-pt-51" title="Permalink to this headline">¶</a></h3>
+<p>A test file has been developed to test all the peripherals of Pt-51.</p>
+<ol class="arabic simple">
+<li><p>Download this test file. <a class="reference download internal" download="" href="_downloads/e37102b034225cd025288a6d3d290845/pt51_test.hex"><code class="xref download docutils literal notranslate"><span class="pre">pt51_test.hex</span></code></a>.</p></li>
+<li><p>Program the Pt-51 using the downloaded pt51_test file.</p></li>
+<li><p>Details of the peripherals being tested and their success/failure can be understood from this set of slides. Make sure all the tests run successfully.</p></li>
+</ol>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/LFKP3HCncYRSa" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></div>
 </div>
 <div class="section" id="at89c5131-datasheet">
 <h2>AT89C5131 Datasheet<a class="headerlink" href="#at89c5131-datasheet" title="Permalink to this headline">¶</a></h2>
