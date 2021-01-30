@@ -20,7 +20,7 @@ Running a Hex file on Pt-51
 ---------------------------
 Assuming that you have installed :ref:`keil-ide` and :ref:`flip-tool` tools successfully.
 
-#. Download this assembly file and compile it to generate the hex file for a simple LED test. :download:`led.hex <_static/led.asm>`.
+#. Download this assembly file and compile it to generate the hex file for a simple LED test. :download:`led.asm <_static/led.asm>`.
 
 #. Take a look at the video below for the procedure to dump a hex file that will be executed on the Pt-51 kit.
 
