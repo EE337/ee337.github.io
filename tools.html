@@ -1,11 +1,11 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html4" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Development Tools &mdash; EE337 Microprocessor Lab 1.0 documentation</title>
   
@@ -16,10 +16,7 @@
 
   
   
-
   
-  
-
   
 
   
@@ -29,9 +26,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -53,7 +51,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> EE337 Microprocessor Lab
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> EE337 Microprocessor Lab
           
 
           
@@ -96,7 +94,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#debugging-in-keil">Debugging in Keil</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#flip">FLIP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#flip">FLIP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dfu-programmer-installation-and-use">DFU Programmer Installation and Use</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pt51.html">Pt-51 Board Resources</a></li>
@@ -141,8 +142,6 @@
 
 
 
-
-
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -154,7 +153,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/tools.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -177,12 +176,12 @@
 <p>At a high-level description, the Keil IDE workflow is as follows:</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>Create a new project.</p></li>
-<li><p>Specify the target device while creating the project.</p></li>
-<li><p>Create a new source file in the project.</p></li>
-<li><p>Build the project.</p></li>
-<li><p>Fix any compilation errors and rebuild.</p></li>
-<li><p>Once program compiles without errors, use the debugger to check correctness of execution.</p></li>
+<li>Create a new project.</li>
+<li>Specify the target device while creating the project.</li>
+<li>Create a new source file in the project.</li>
+<li>Build the project.</li>
+<li>Fix any compilation errors and rebuild.</li>
+<li>Once program compiles without errors, use the debugger to check correctness of execution.</li>
 </ol>
 </div></blockquote>
 <p>See the slide deck and video in the following section for more detailed instructions.</p>
@@ -195,19 +194,15 @@
 <p><strong>Windows users</strong> can install Keil by simply double-clicking the downloaded file.</p>
 <p><strong>Linux users</strong> will need to install Keil using <a class="reference external" href="https://www.winehq.org/">Wine</a>.</p>
 <ul>
-<li><p>On Ubuntu, install Wine by running the following command. Use the relevant package manager for other Linux distributions.</p>
-<blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install wine-stable
+<li><p class="first">On Ubuntu, install Wine by running the following command. Use the relevant package manager for other Linux distributions.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install wine-stable
 </pre></div>
 </div>
-</div></blockquote>
 </li>
-<li><p>Run the following command in the folder where c51v960a.exe was downloaded.</p>
-<blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wine c51v960a.exe
+<li><p class="first">Run the following command in the folder where c51v960a.exe was downloaded.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wine c51v960a.exe
 </pre></div>
 </div>
-</div></blockquote>
 </li>
 </ul>
 <div class="line-block">
@@ -216,7 +211,7 @@
 </div>
 <div class="section" id="getting-started-with-keil-vision-ide">
 <h3>Getting Started with Keil µVision IDE<a class="headerlink" href="#getting-started-with-keil-vision-ide" title="Permalink to this headline">¶</a></h3>
-<p>The following slide deck has an introduction to using the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/2ab32595ef80c2f885554d4c5aa01b08/Getting_Started_with_Keil_uVision_2020.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<p>The following slide deck has an introduction to using the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/63b013761eb1058e7de987805d83a6be/Getting_Started_with_Keil_uVision_2020.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/1SB7pnnJUBvuhf" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe><div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
@@ -229,25 +224,25 @@
 </div>
 <div class="section" id="debugging-in-keil">
 <h3>Debugging in Keil<a class="headerlink" href="#debugging-in-keil" title="Permalink to this headline">¶</a></h3>
-<p>The following slide deck has instructions on debugging programs with the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/b18a435f4db1ce9439350616672ad80c/Keil-DebuggingPrograms.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<p>The following slide deck has instructions on debugging programs with the Keil µVision IDE. The pdf can be downloaded by clicking <a class="reference download internal" download="" href="_downloads/83cc7abbabd3d1510f176fb5583334cd/Keil-DebuggingPrograms.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/NTvZQHod7vd2xg" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe><div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
+<p class="first admonition-title">Note</p>
 <p>If Keil µVision keeps crashing on pressing the <code class="docutils literal notranslate"><span class="pre">Start\stop</span> <span class="pre">debug</span> <span class="pre">session</span></code>, then follow these steps.</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>Right click on the target folder (at the left pane).</p></li>
-<li><p>Select <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Target</span> <span class="pre">`&lt;TargetName&gt;`</span></code>.</p></li>
-<li><p>Select the <code class="docutils literal notranslate"><span class="pre">Debug</span></code> pane.</p></li>
-<li><p>Change the <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> field to the right of <code class="docutils literal notranslate"><span class="pre">Dialog</span> <span class="pre">DLL</span></code> with text <code class="docutils literal notranslate"><span class="pre">DP51.DLL</span></code> to <code class="docutils literal notranslate"><span class="pre">-p51</span></code>.</p></li>
-<li><p>Tick the <code class="docutils literal notranslate"><span class="pre">Limit</span> <span class="pre">Speed</span> <span class="pre">to</span> <span class="pre">Real-Time</span></code> checkbox.</p></li>
+<li>Right click on the target folder (at the left pane).</li>
+<li>Select <code class="docutils literal notranslate"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Target</span> <span class="pre">`&lt;TargetName&gt;`</span></code>.</li>
+<li>Select the <code class="docutils literal notranslate"><span class="pre">Debug</span></code> pane.</li>
+<li>Change the <code class="docutils literal notranslate"><span class="pre">Parameter</span></code> field to the right of <code class="docutils literal notranslate"><span class="pre">Dialog</span> <span class="pre">DLL</span></code> with text <code class="docutils literal notranslate"><span class="pre">DP51.DLL</span></code> to <code class="docutils literal notranslate"><span class="pre">-p51</span></code>.</li>
+<li>Tick the <code class="docutils literal notranslate"><span class="pre">Limit</span> <span class="pre">Speed</span> <span class="pre">to</span> <span class="pre">Real-Time</span></code> checkbox.</li>
 </ol>
 </div></blockquote>
 <p>See the below screenshot.</p>
-<img alt="_images/debugger.png" src="_images/debugger.png" />
+<img alt="_images/debugger.png" class="last" src="_images/debugger.png" />
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -258,7 +253,45 @@
 <div class="section" id="flip">
 <span id="flip-tool"></span><h2>FLIP<a class="headerlink" href="#flip" title="Permalink to this headline">¶</a></h2>
 <p>Pt-51 board device driver installation instructions</p>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/lPQWPiR58rvvem" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe><p>The pdf of the above slide deck is available <a class="reference download internal" download="" href="_downloads/373fe561b59e323add137197098eff94/FLIP_and_Device_driver_installation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/lPQWPiR58rvvem" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe><p>The pdf of the above slide deck is available <a class="reference download internal" download="" href="_downloads/93096249bb10ec6f0073a465dc81b52e/FLIP_and_Device_driver_installation.pdf"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="dfu-programmer-installation-and-use">
+<h3>DFU Programmer Installation and Use<a class="headerlink" href="#dfu-programmer-installation-and-use" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Installation steps for Linux</dt>
+<dd><ul class="first last">
+<li>Run <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">update</span> <span class="pre">-y</span></code></li>
+<li>Run <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">-y</span> <span class="pre">dfu-programmer</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Installation steps for Mac</dt>
+<dd><ul class="first last">
+<li>Press <code class="docutils literal notranslate"><span class="pre">Command+Space</span></code> and type <code class="docutils literal notranslate"><span class="pre">Terminal</span></code> and press <code class="docutils literal notranslate"><span class="pre">enter/return</span></code> key.</li>
+<li>Run the following in the Terminal app: <code class="docutils literal notranslate"><span class="pre">ruby</span> <span class="pre">-e</span> <span class="pre">&quot;$(curl</span> <span class="pre">-fsSL</span> <span class="pre">https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span> <span class="pre">&lt;</span> <span class="pre">/dev/null</span> <span class="pre">2&gt;</span> <span class="pre">/dev/null</span></code></li>
+<li>If the screen prompts you to enter a password, please enter your Mac’s user password to continue. When you type the password, it won’t be displayed on screen, but the system would accept it. So just type your password and press <code class="docutils literal notranslate"><span class="pre">enter/return</span></code> key. Then wait for the command to finish.</li>
+<li>Run: <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">dfu-programmer</span></code></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Use (common for Linux and Mac):</dt>
+<dd><ul class="first last">
+<li>Run the following command for erasing flash: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">dfu-programmer</span> <span class="pre">at89c5131</span> <span class="pre">erase</span></code>.</li>
+<li>Run the following command for programming flash: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">dfu-programmer</span> <span class="pre">at89c5131</span> <span class="pre">flash</span> <span class="pre">&lt;hex_file.hex&gt;</span></code>. Make sure you are in the directory where your hexfile is present when you run it.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -267,29 +300,37 @@
            
           </div>
           <footer>
+  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="pt51.html" class="btn btn-neutral float-right" title="Pt-51 Board Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="s2.html" class="btn btn-neutral float-left" title="Section 2 (3rd yr UG)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+        <a href="pt51.html" class="btn btn-neutral float-right" title="Pt-51 Board Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="s2.html" class="btn btn-neutral float-left" title="Section 2 (3rd yr UG)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2021, EE337 Instructors.
+        
+        &copy; Copyright 2021, EE337 Instructors
 
     </p>
   </div>
     
     
     
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
+
         </div>
       </div>
 

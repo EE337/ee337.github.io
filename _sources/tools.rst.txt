@@ -36,7 +36,7 @@ To **download the Keil IDE**, you will need to register at `https://www.keil.com
 
 - On Ubuntu, install Wine by running the following command. Use the relevant package manager for other Linux distributions.
   
-    .. code-block:: bash
+  .. code-block:: bash
 
       sudo apt install wine-stable
 
@@ -44,7 +44,7 @@ To **download the Keil IDE**, you will need to register at `https://www.keil.com
 - Run the following command in the folder where c51v960a.exe was downloaded.
 
 
-    .. code-block:: bash
+  .. code-block:: bash
 
       wine c51v960a.exe
 
@@ -112,3 +112,25 @@ Pt-51 board device driver installation instructions
     <iframe src="//www.slideshare.net/slideshow/embed_code/key/lPQWPiR58rvvem" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 The pdf of the above slide deck is available :download:`here <_static/FLIP_and_Device_driver_installation.pdf>`.
+
+|
+|
+
+DFU Programmer Installation and Use
+-----------------------------------
+- Installation steps for Linux
+	- Run ``sudo apt-get update -y``
+	- Run ``sudo apt-get install -y dfu-programmer``
+
+- Installation steps for Mac
+	- Press ``Command+Space`` and type ``Terminal`` and press ``enter/return`` key.
+	- Run the following in the Terminal app: ``ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null``
+ 	- If the screen prompts you to enter a password, please enter your Mac's user password to continue. When you type the password, it won't be displayed on screen, but the system would accept it. So just type your password and press ``enter/return`` key. Then wait for the command to finish.
+	- Run: ``brew install dfu-programmer``
+
+
+- Use (common for Linux and Mac):
+	- Run the following command for erasing flash: ``sudo dfu-programmer at89c5131 erase``.
+	- Run the following command for programming flash: ``sudo dfu-programmer at89c5131 flash <hex_file.hex>``. Make sure you are in the directory where your hexfile is present when you run it.
+
+
