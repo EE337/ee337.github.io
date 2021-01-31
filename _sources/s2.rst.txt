@@ -32,7 +32,7 @@ Getting started with the Pt-51 kit and simple port interactions.
 
 .. raw:: html
 
-    <iframe src="//www.slideshare.net/slideshow/embed_code/key/fSPy1zy0FDrQaJ" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+   <iframe src="//www.slideshare.net/slideshow/embed_code/key/6RV6wKCSunb2en" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 The pdf of the above lab sheet is available :download:`here <_static/lab3-s2.pdf>`.
 
