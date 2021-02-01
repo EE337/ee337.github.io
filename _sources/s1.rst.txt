@@ -25,5 +25,15 @@ Continuing to look at more instructions from the ISA of 8051.
 
 The pdf of the above lab sheet is available :download:`here <_static/lab2-s1.pdf>`.
 
+=====
+Lab 3
+=====
+Getting started with the Pt-51 kit and read/write to ports.
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/K0FA7OSelCNjmI" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here <_static/lab3-s1.pdf>`.
 
 
