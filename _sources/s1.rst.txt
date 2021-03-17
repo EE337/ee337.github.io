@@ -69,3 +69,14 @@ More on using Timers in 8051.
 
 The pdf of the above lab sheet is available :download:`here <_static/lab6-s1.pdf>`.
 
+=====
+Lab 7
+=====
+Using UART to interface computer's keyboard and Pt-51 kit.
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/3iojv7jSGQ6P26" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+ 
+The pdf of the above lab sheet is available :download:`here <_static/lab7-s1.pdf>`.
+
