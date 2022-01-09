@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-EE337 Microprocessor Lab
+2021 Pages Archive
 ====================================================
 
 .. toctree::
@@ -11,12 +11,8 @@ EE337 Microprocessor Lab
    :caption: Contents:
 
    overview
-   labsheets
-   tools
-   pt51
-   faq
-   dks
-   2021/index.rst
+   s1
+   s2
 
 
 ..

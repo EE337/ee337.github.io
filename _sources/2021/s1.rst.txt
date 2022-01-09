@@ -1,0 +1,92 @@
+********************************
+Section 1 (2nd yr UG)
+********************************
+
+=====
+Lab 1
+=====
+
+See the resources in :ref:`keil-ide` and attempt the experiments in the following lab sheet. 
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/eHqBMamvh9dhPy" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here </_static/lab1-s1.pdf>`.
+
+=====
+Lab 2
+=====
+Continuing to look at more instructions from the ISA of 8051.
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/ySWhOdlv78ZXPi" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here </_static/lab2-s1.pdf>`.
+
+=====
+Lab 3
+=====
+Getting started with the Pt-51 kit and read/write to ports.
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/K0FA7OSelCNjmI" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here </_static/lab3-s1.pdf>`.
+
+=====
+Lab 4
+=====
+Using the LCD interface with the Pt-51 kit.
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/6vVnyQahYOCazK" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here </_static/lab4-s1.pdf>`.
+
+=====
+Lab 5
+=====
+Using Timers in 8051.
+
+.. raw:: html
+
+     <iframe src="//www.slideshare.net/slideshow/embed_code/key/45jUirHW080CEs" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here </_static/lab5-s1.pdf>`.
+
+=====
+Lab 6
+=====
+More on using Timers in 8051.
+
+.. raw:: html
+
+     <iframe src="//www.slideshare.net/slideshow/embed_code/key/NJXJC0X0hb8eAB" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here </_static/lab6-s1.pdf>`.
+
+=====
+Lab 7
+=====
+Using UART to interface computer's keyboard and Pt-51 kit.
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/wRQbUsLKcN7aUO" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here </_static/lab7-s1.pdf>`.
+
+=====
+Lab 8
+=====
+Interfacing ADC using SPI with 8051.
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/oxuCpDtYwT9OyP" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here </_static/lab8-s1.pdf>`.
