@@ -17,7 +17,7 @@ Course Instructors
 
 - Faculty
     - `Saravanan Vijayakumaran <https://www.ee.iitb.ac.in/~sarva/>`_
-    - `Nikhil Karamchandani <https://sites.google.com/site/nikhilkaram/home>`
+    - `Nikhil Karamchandani <https://sites.google.com/site/nikhilkaram/home>`_
 
 - Staff
     - Mahesh Bhaganagare
