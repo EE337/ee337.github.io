@@ -15,15 +15,6 @@ Mondays, 2pm to 5pm
 Course Instructors
 ==================
 
-- Faculty
-    - `Saravanan Vijayakumaran <https://www.ee.iitb.ac.in/~sarva/>`_
-    - `Nikhil Karamchandani <https://sites.google.com/site/nikhilkaram/home>`_
-
-- Staff
-    - Mahesh Bhaganagare
-    - Amit Shetye
-    - Maheshwar Mangat
-
 - Teaching Assistants
     - Nihar Shah 
     - Abhinav Visalakshi 
@@ -63,3 +54,11 @@ Course Instructors
     - Tangi Simmannaidu
     - Utkarsh Bhalode
 
+- Staff
+    - Mahesh Bhaganagare
+    - Amit Shetye
+    - Maheshwar Mangat
+
+- Faculty
+    - `Saravanan Vijayakumaran <https://www.ee.iitb.ac.in/~sarva/>`_
+    - `Nikhil Karamchandani <https://sites.google.com/site/nikhilkaram/home>`_
