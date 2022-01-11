@@ -2,4 +2,16 @@
 Labsheets
 ********************************
 
-Coming soon...
+=====
+Lab 1
+=====
+
+See the resources in :ref:`keil-ide` and attempt the experiments in the following lab sheet.  The link to the PORTSQ.ASM file is :download:`here </_static/2022/PORTSQ.ASM>`.
+
+.. raw:: html
+
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/5alThqoQMh4WXh" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+The pdf of the above lab sheet is available :download:`here </_static/2022/lab1.pdf>`.
+
+
