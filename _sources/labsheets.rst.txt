@@ -21,7 +21,7 @@ Lab 2
 
 .. raw:: html
 
-    <iframe src="//www.slideshare.net/slideshow/embed_code/key/vfbfoupacKaJ8s" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/qinz25SZsXBy9K" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 The pdf of the above lab sheet is available :download:`here </_static/2022/lab2.pdf>`.
 
