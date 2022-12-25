@@ -1,0 +1,640 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>EE337 Microprocessors Lab</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="overview.html"><strong aria-hidden="true">1.</strong> Course Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="schedule.html"><strong aria-hidden="true">1.1.</strong> Course Schedule</a></li><li class="chapter-item "><a href="instructors.html"><strong aria-hidden="true">1.2.</strong> Course Instructors</a></li></ol></li><li class="chapter-item "><a href="labsheets.html"><strong aria-hidden="true">2.</strong> Labsheets</a></li><li class="chapter-item "><a href="tools.html"><strong aria-hidden="true">3.</strong> Development Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="keil.html"><strong aria-hidden="true">3.1.</strong> Keil µVision IDE</a></li><li class="chapter-item "><a href="flip.html"><strong aria-hidden="true">3.2.</strong> FLIP</a></li></ol></li><li class="chapter-item "><a href="pt51.html"><strong aria-hidden="true">4.</strong> Pt-51 Board Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="pt51/user_manual.html"><strong aria-hidden="true">4.1.</strong> User Manual</a></li><li class="chapter-item "><a href="pt51/programming.html"><strong aria-hidden="true">4.2.</strong> Programming and Testing</a></li><li class="chapter-item "><a href="pt51/at89c5131_datasheet.html"><strong aria-hidden="true">4.3.</strong> AT89C5131 Datasheet</a></li><li class="chapter-item "><a href="pt51/8051.html"><strong aria-hidden="true">4.4.</strong> 8051 Instruction Set</a></li></ol></li><li class="chapter-item "><a href="dks.html"><strong aria-hidden="true">5.</strong> 8051 Notes by Prof. DKS</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="dks/introduction.html"><strong aria-hidden="true">5.1.</strong> Introduction to Microcontrollers</a></li><li class="chapter-item "><a href="dks/interrupts.html"><strong aria-hidden="true">5.2.</strong> 8051 Interrupts</a></li><li class="chapter-item "><a href="dks/timers.html"><strong aria-hidden="true">5.3.</strong> 8051 Timers</a></li><li class="chapter-item "><a href="dks/serial_io.html"><strong aria-hidden="true">5.4.</strong> 8051 Serial IO</a></li><li class="chapter-item "><a href="dks/intel_hex_format.html"><strong aria-hidden="true">5.5.</strong> Intel Hex Format</a></li></ol></li><li class="chapter-item "><a href="faq.html"><strong aria-hidden="true">6.</strong> FAQ</a></li><li class="chapter-item affix "><li class="part-title">Archive Pages</li><li class="chapter-item "><a href="archive/2022/index.html"><strong aria-hidden="true">7.</strong> 2022 Course Pages</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="archive/2022/overview.html"><strong aria-hidden="true">7.1.</strong> Course Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="archive/2022/schedule.html"><strong aria-hidden="true">7.1.1.</strong> Course Schedule</a></li><li class="chapter-item "><a href="archive/2022/instructors.html"><strong aria-hidden="true">7.1.2.</strong> Course Instructors</a></li></ol></li><li class="chapter-item "><a href="archive/2022/labsheets.html"><strong aria-hidden="true">7.2.</strong> Labsheets</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="archive/2022/labsheets/lab1.html"><strong aria-hidden="true">7.2.1.</strong> Lab 1</a></li><li class="chapter-item "><a href="archive/2022/labsheets/lab2.html"><strong aria-hidden="true">7.2.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="archive/2022/labsheets/lab3.html"><strong aria-hidden="true">7.2.3.</strong> Lab 3</a></li><li class="chapter-item "><a href="archive/2022/labsheets/lab4.html"><strong aria-hidden="true">7.2.4.</strong> Lab 4</a></li><li class="chapter-item "><a href="archive/2022/labsheets/lab5.html"><strong aria-hidden="true">7.2.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="archive/2022/labsheets/lab6.html"><strong aria-hidden="true">7.2.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="archive/2022/labsheets/lab7.html"><strong aria-hidden="true">7.2.7.</strong> Lab 7</a></li><li class="chapter-item "><a href="archive/2022/labsheets/lab8.html"><strong aria-hidden="true">7.2.8.</strong> Lab 8</a></li><li class="chapter-item "><a href="archive/2022/labsheets/lab9.html"><strong aria-hidden="true">7.2.9.</strong> Lab 9</a></li></ol></li></ol></li><li class="chapter-item "><a href="archive/2021/index.html"><strong aria-hidden="true">8.</strong> 2021 Course Pages</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="archive/2021/overview.html"><strong aria-hidden="true">8.1.</strong> Course Overview</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="archive/2021/schedule.html"><strong aria-hidden="true">8.1.1.</strong> Course Schedule</a></li><li class="chapter-item "><a href="archive/2021/instructors.html"><strong aria-hidden="true">8.1.2.</strong> Course Instructors</a></li></ol></li><li class="chapter-item "><a href="archive/2021/s1.html"><strong aria-hidden="true">8.2.</strong> Section 1 (2nd yr UG)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="archive/2021/s1/lab1.html"><strong aria-hidden="true">8.2.1.</strong> Lab 1</a></li><li class="chapter-item "><a href="archive/2021/s1/lab2.html"><strong aria-hidden="true">8.2.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="archive/2021/s1/lab3.html"><strong aria-hidden="true">8.2.3.</strong> Lab 3</a></li><li class="chapter-item "><a href="archive/2021/s1/lab4.html"><strong aria-hidden="true">8.2.4.</strong> Lab 4</a></li><li class="chapter-item "><a href="archive/2021/s1/lab5.html"><strong aria-hidden="true">8.2.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="archive/2021/s1/lab6.html"><strong aria-hidden="true">8.2.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="archive/2021/s1/lab7.html"><strong aria-hidden="true">8.2.7.</strong> Lab 7</a></li><li class="chapter-item "><a href="archive/2021/s1/lab8.html"><strong aria-hidden="true">8.2.8.</strong> Lab 8</a></li></ol></li><li class="chapter-item "><a href="archive/2021/s2.html"><strong aria-hidden="true">8.3.</strong> Section 2 (3rd yr UG)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="archive/2021/s2/lab1.html"><strong aria-hidden="true">8.3.1.</strong> Lab 1</a></li><li class="chapter-item "><a href="archive/2021/s2/lab2.html"><strong aria-hidden="true">8.3.2.</strong> Lab 2</a></li><li class="chapter-item "><a href="archive/2021/s2/lab3.html"><strong aria-hidden="true">8.3.3.</strong> Lab 3</a></li><li class="chapter-item "><a href="archive/2021/s2/lab4.html"><strong aria-hidden="true">8.3.4.</strong> Lab 4</a></li><li class="chapter-item "><a href="archive/2021/s2/lab5.html"><strong aria-hidden="true">8.3.5.</strong> Lab 5</a></li><li class="chapter-item "><a href="archive/2021/s2/lab6.html"><strong aria-hidden="true">8.3.6.</strong> Lab 6</a></li><li class="chapter-item "><a href="archive/2021/s2/lab7.html"><strong aria-hidden="true">8.3.7.</strong> Lab 7</a></li><li class="chapter-item "><a href="archive/2021/s2/lab8.html"><strong aria-hidden="true">8.3.8.</strong> Lab 8</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">EE337 Microprocessors Lab</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="course-overview"><a class="header" href="#course-overview">Course Overview</a></h1>
+<p>This is the course webpage for the EE337 Microprocessors Lab course running in the <a href="https://www.ee.iitb.ac.in">Department of Electrical Engineering</a> of <a href="https://www.iitb.ac.in/">IIT Bombay</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="course-schedule"><a class="header" href="#course-schedule">Course Schedule</a></h1>
+<p>The lab slots will be announced once they are finalized by the department office.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="course-instructors"><a class="header" href="#course-instructors">Course Instructors</a></h1>
+<ul>
+<li>
+<p>Teaching Assistants</p>
+<ul>
+<li>Pankaj Goswami</li>
+<li>Nidhisha D</li>
+<li>K Akhilesh Rao</li>
+<li>Dhruva S H</li>
+<li>Naef Ahmad</li>
+<li>Siddhant Singh Tomar</li>
+<li>Yerramsetti Chaitanya Kumar</li>
+<li>Harsh Gupta</li>
+<li>Siddhesh Sharma</li>
+</ul>
+</li>
+<li>
+<p>Staff</p>
+<ul>
+<li>Mahesh Bhaganagare</li>
+<li>Amit Shetye</li>
+<li>Maheshwar Mangat</li>
+</ul>
+</li>
+<li>
+<p>Faculty</p>
+<ul>
+<li><a href="https://www.ee.iitb.ac.in/~sarva/">Saravanan Vijayakumaran</a></li>
+<li><a href="https://sites.google.com/site/nikhilkaram/home">Nikhil Karamchandani</a></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="labsheets"><a class="header" href="#labsheets">Labsheets</a></h1>
+<p>Labsheets will be posted here once the semester begins.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="development-tools"><a class="header" href="#development-tools">Development Tools</a></h1>
+<p>This chapter describes the installation and usage of Keil and FLIP. These tools are required to write, debug, and execute programs for the Pt-51 Board.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="keil-µvision-ide"><a class="header" href="#keil-µvision-ide">Keil µVision IDE</a></h1>
+<p>Keil µVision is an integrated development environment (IDE) for editing, compiling, running, and debugging programs for the 8051 microcontroller. It is <em>integrated</em> in the sense that the same environment is used to perform all these tasks. For loading programs into the 8051 microcontroller, we will need the <a href="./flip.html">FLIP</a> tool. </p>
+<p>An <em>non-integrated</em> workflow would be where different tools are used for different tasks. For example, Visual Studio Code could be used for editing the program and a command line compiler could be used to compile the program.</p>
+<p>At a high-level description, the Keil IDE workflow is as follows:</p>
+<ol>
+<li>Create a new project.</li>
+<li>Specify the target device while creating the project.</li>
+<li>Create a new source file in the project.</li>
+<li>Build the project.</li>
+<li>Fix any compilation errors and rebuild.</li>
+<li>Once program compiles without errors, use the debugger to check correctness of execution.</li>
+</ol>
+<p>See the slide deck and video in the following section for more detailed instructions.</p>
+<h2 id="download-and-installation"><a class="header" href="#download-and-installation">Download and Installation</a></h2>
+<p>To <strong>download the Keil IDE</strong>, you will need to register at <a href="https://www.keil.com/demo/eval/c51.htm">https://www.keil.com/demo/eval/c51.htm</a></p>
+<p><strong>Windows users</strong> can install Keil by simply double-clicking the downloaded file. </p>
+<p><strong>Linux users</strong> will need to install Keil using <a href="https://www.winehq.org/">Wine</a>.</p>
+<ul>
+<li>
+<p>On Ubuntu, install Wine by running the following command. Use the relevant package manager for other Linux distributions.</p>
+<pre><code class="language-bash">sudo apt install wine-stable
+</code></pre>
+</li>
+<li>
+<p>Run the following command in the folder where c51v960a.exe was downloaded.</p>
+<pre><code class="language-bash">wine c51v960a.exe
+</code></pre>
+</li>
+</ul>
+<div class="table-wrapper"><table><thead><tr></tr></thead><tbody>
+</tbody></table>
+</div>
+<h2 id="getting-started-with-keil-µvision-ide"><a class="header" href="#getting-started-with-keil-µvision-ide">Getting Started with Keil µVision IDE</a></h2>
+<p>The following slide deck has an introduction to using the Keil µVision IDE. The pdf can be downloaded by clicking <a href="./static/Getting_Started_with_Keil_uVision_2020.pdf">here</a>.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/1SB7pnnJUBvuhf" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>A video walk through of the features of Keil µVision IDE.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IQZ8nyKL4xI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<h2 id="debugging-in-keil"><a class="header" href="#debugging-in-keil">Debugging in Keil</a></h2>
+<p>The following slide deck has instructions on debugging programs with the Keil µVision IDE. The pdf can be downloaded by clicking <a href="./static/Keil-DebuggingPrograms.pdf">here</a>.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/NTvZQHod7vd2xg" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<blockquote>
+<p><strong>Note:</strong> If Keil µVision keeps crashing on pressing the <code>Start\stop debug session</code>, then follow these steps.</p>
+<ol>
+<li>Right click on the target folder (at the left pane). </li>
+<li>Select ``Options for Target `<TargetName>```.</li>
+<li>Select the <code>Debug</code> pane. </li>
+<li>Change the <code>Parameter</code> field to the right of <code>Dialog DLL</code> with text <code>DP51.DLL</code> to <code>-p51</code>.</li>
+<li>Tick the <code>Limit Speed to Real-Time</code> checkbox.</li>
+</ol>
+<p>See the below screenshot.</p>
+<p><img src="./static/debugger.png" alt="Keil debugger screenshot" /></p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="flip"><a class="header" href="#flip">FLIP</a></h1>
+<h2 id="pt-51-board-device-driver-installation-instructions"><a class="header" href="#pt-51-board-device-driver-installation-instructions">Pt-51 board device driver installation instructions</a></h2>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/lPQWPiR58rvvem" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above slide deck is available <a href="./static/FLIP_and_Device_driver_installation.pdf">here</a>.</p>
+<h2 id="dfu-programmer-installation-and-use"><a class="header" href="#dfu-programmer-installation-and-use">DFU Programmer Installation and Use</a></h2>
+<ul>
+<li>
+<p>Installation steps for Linux</p>
+<ul>
+<li>Run <code>sudo apt-get update -y</code></li>
+<li>Run <code>sudo apt-get install -y dfu-programmer</code></li>
+</ul>
+</li>
+<li>
+<p>Installation steps for Mac</p>
+<ul>
+<li>Press <code>Command+Space</code> and type <code>Terminal</code> and press <code>enter/return</code> key.</li>
+<li>Run the following in the Terminal app: <code>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; &lt; /dev/null 2&gt; /dev/null</code></li>
+<li>If the screen prompts you to enter a password, please enter your Mac's user password to continue. When you type the password, it won't be displayed on screen, but the system would accept it. So just type your password and press <code>enter/return</code> key. Then wait for the command to finish.</li>
+<li>Run: <code>brew install dfu-programmer</code></li>
+</ul>
+</li>
+<li>
+<p>Use (common for Linux and Mac):</p>
+<ul>
+<li>Run the following command for erasing flash: <code>sudo dfu-programmer at89c5131 erase</code>.</li>
+<li>Run the following command for programming flash: <code>sudo dfu-programmer at89c5131 flash &lt;hex_file.hex&gt;</code>. Make sure you are in the directory where your hexfile is present when you run it.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pt-51-board-resources"><a class="header" href="#pt-51-board-resources">Pt-51 Board Resources</a></h1>
+<p>This chapter has the resources related to the Pt-51 Board and the 8051 micocontroller.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="user-manual"><a class="header" href="#user-manual">User Manual</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/DPbIbtknoE3YHU" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above slide deck is available <a href="pt51/../static/PT-51_Ver_1.3_User_Manual.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="programming-and-testing"><a class="header" href="#programming-and-testing">Programming and Testing</a></h1>
+<h2 id="running-a-hex-file-on-pt-51"><a class="header" href="#running-a-hex-file-on-pt-51">Running a Hex file on Pt-51</a></h2>
+<p>Assuming that you have installed <a href="pt51/./keil.html">Keil</a> and <a href="pt51/./flip.html">FLIP</a> tools successfully.</p>
+<ol>
+<li>
+<p>Download the following assembly file and compile it to generate the hex file for a simple LED test. <a href="pt51/../static/led.asm">led.asm</a>.</p>
+</li>
+<li>
+<p>Take a look at the video below for the procedure to dump a hex file that will be executed on the Pt-51 kit.</p>
+</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JPBnxZETjGo" frameborder="0" allowfullscreen></iframe> 
+<p>Completing, the above two steps lets you test the LEDs on Pt-51 kit. This is a quick check of the Pt-51 kit and installed tools.</p>
+<h2 id="testing-the-peripherals-of-pt-51"><a class="header" href="#testing-the-peripherals-of-pt-51">Testing the peripherals of Pt-51</a></h2>
+<p>A test file has been developed to test all the peripherals of Pt-51.</p>
+<ol>
+<li>Download this test file. <a href="pt51/../static/pt51_test.hex">pt51_test.hex</a>.</li>
+<li>Program the Pt-51 using the downloaded <code>pt51_test.hex</code> file.</li>
+<li>Details of the peripherals being tested and their success/failure can be understood from this set of slides. Make sure all the tests run successfully.</li>
+</ol>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/LFKP3HCncYRSa" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of these slides is available <a href="pt51/../static/Pt-51_Test_Procedures.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="at89c5131-datasheet"><a class="header" href="#at89c5131-datasheet">AT89C5131 Datasheet</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/1hyVnPObwbCx4n" width="668" height="900" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the datasheet is available <a href="pt51/../static/89c5131datasheet.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="8051-instruction-set"><a class="header" href="#8051-instruction-set">8051 Instruction Set</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/7Y4gL37ugkkUHm" width="668" height="900" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the instruction set is available <a href="pt51/../static/8051_Instruction_set.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="prof-dinesh-k-sharmas-8051-notes"><a class="header" href="#prof-dinesh-k-sharmas-8051-notes">Prof. Dinesh K Sharma's 8051 Notes</a></h1>
+<p>This chapter has slides and notes on 8051 prepared by <a href="https://www.ee.iitb.ac.in/wiki/faculty/dinesh">Prof. Dinesh K Sharma</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-to-microcontrollers"><a class="header" href="#introduction-to-microcontrollers">Introduction to Microcontrollers</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/y6Xk6Ni3JYCacL" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above slide deck is available <a href="dks/../static/8051-arch.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="8051-interrupts"><a class="header" href="#8051-interrupts">8051 Interrupts</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/xwPRFog7VY0KLA" width="668" height="900" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above notes is available <a href="dks/../static/Interrupts.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="8051-timers"><a class="header" href="#8051-timers">8051 Timers</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/bv48K0LMnI04sg" width="668" height="900" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above notes is available <a href="dks/../static/Timers.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="8051-serial-io"><a class="header" href="#8051-serial-io">8051 Serial IO</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/iRrpPMicNmlbiN" width="668" height="900" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above notes is available <a href="dks/../static/Serial.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="intel-hex-format"><a class="header" href="#intel-hex-format">Intel Hex Format</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/2YhB0l7GYEhgmW" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above slide deck is available <a href="dks/../static/intel-hex.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="faq"><a class="header" href="#faq">FAQ</a></h1>
+<h2 id="how-to-resolve-µvision-debugger-error-65-access-violation-error"><a class="header" href="#how-to-resolve-µvision-debugger-error-65-access-violation-error">How to resolve &quot;µVISION DEBUGGER: ERROR 65 (ACCESS VIOLATION)&quot; error?</a></h2>
+<ul>
+<li>
+<p>The µVision Debugger generates the following error whenever we try to write to the variable:</p>
+<blockquote>
+<p><strong>Error 65: Access violation at 0x00000004 : No 'write' permission</strong></p>
+</blockquote>
+</li>
+<li>
+<p>Cause</p>
+<ul>
+<li>When the µVision Debugger loads an executable program, it creates a memory map using the program and data segments from the program. Code segments are marked as executable while data segments are marked as read/write. All other memory is unmapped and is, therefore, not marked for any type of access.</li>
+<li>The µVision Debugger checks that all memory accesses are made to objects that are defined in your C program. For any access that is outside of a defined C object, the µVision debugger generates an <strong>Error 65: access violation message</strong>.</li>
+<li>By default, the debugger allows only memory accesses to valid data objects. This is useful for finding uninitialized or incorrectly initialized pointers, for example. Usually, there is a programming error when you try to access unexpected locations.</li>
+</ul>
+</li>
+<li>
+<p>Resolution</p>
+<ul>
+<li>
+<p>If the error 65 is for an area that should be accessed, update the memory map the simulator uses. Define all the memory ranges that your program is permitted to access. Ensure that you set the permissions (read, write, execute) for each range to match your actual hardware.</p>
+<ul>
+<li>
+<p>Use the <a href="http://www.keil.com/support/man/docs/uv4/uv4_db_dbg_memmap.htm">Debug - Memory Map</a> dialog. Enter a range in , format, choose the permissions (read, write, execute) and click Map Range</p>
+</li>
+<li>
+<p>Enter the <a href="http://www.keil.com/support/man/docs/uv3/uv3_cm_map.htm">MAP</a> command in the <a href="http://www.keil.com/support/man/docs/uv3/uv3_db_dbg_outputwin.htm">Command window</a>.</p>
+<pre><code class="language-C">MAP  C:0xF800, C:0xF8FF  READ WRITE  // allow R/W access to IO space
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>For the 80x51 targets the address might be prefixed with a memory space specifier as described in the table on <a href="http://www.keil.com/support/man/docs/uv3/uv3_cm_display.htm">this page</a>. For example, <code>C:0xF800</code> refers to Code address <code>0xF800</code>.</p>
+</li>
+<li>
+<p>Any memory map changes could be lost during the next debug session. Once you find the correct memory put the required MAP commands into a debugger INI file that can be entered under <a href="http://www.keil.com/support/man/docs/uv4/uv4_db_cmd_input_file.htm">Project -&gt; Options for Target -&gt; Debug</a> and create an initialization file.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Source: <a href="https://www.keil.com/support/docs/814.htm">https://www.keil.com/support/docs/814.htm</a></p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2022-course-pages"><a class="header" href="#2022-course-pages">2022 Course Pages</a></h1>
+<p>The pages in this chapter are from the Spring 2022 offering of the EE337 Microprocessors Lab course.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="course-overview-1"><a class="header" href="#course-overview-1">Course Overview</a></h1>
+<p>This is the course webpage for the EE337 Microprocessors Lab course running in the <a href="https://www.ee.iitb.ac.in">Department of Electrical Engineering</a> of <a href="https://www.iitb.ac.in/">IIT Bombay</a>.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/BFb2PAW6Hp2yiz" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
+<p>The pdf of the above slide deck is available <a href="archive/2022/./downloads/EE337-Course-Outline-2022.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="course-schedule-1"><a class="header" href="#course-schedule-1">Course Schedule</a></h1>
+<p>Mondays, 2pm to 5pm</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="course-instructors-1"><a class="header" href="#course-instructors-1">Course Instructors</a></h1>
+<ul>
+<li>
+<p>Teaching Assistants</p>
+<ul>
+<li>Nihar Shah </li>
+<li>Abhinav Visalakshi </li>
+<li>Vikash Kumar </li>
+<li>Saurabh Sharma</li>
+<li>Avadhoot Khairnar</li>
+<li>Pankaj Goswami</li>
+<li>Nidhisha D</li>
+<li>Naef Ahmad</li>
+<li>Hitesh Kumar Sahu</li>
+<li>Ritu Sharma</li>
+<li>K Akhilesh Rao</li>
+<li>Prajwal Kamble</li>
+<li>A Pavankumar Reddy</li>
+<li>Apoorva Jangir</li>
+<li>Pradumn Kumar</li>
+<li>Sonal Kumar</li>
+<li>Sumrit Gupta</li>
+<li>Rajat Kumar</li>
+<li>Rajesh Naman </li>
+<li>Prajval Nakrani </li>
+<li>Rishikesh Meshram</li>
+<li>Sudhanshu Nimbalkar</li>
+<li>Sarthak Jain</li>
+<li>Sayed Zafar Uzai</li>
+<li>Shivam Agarwal</li>
+<li>Aditya Khanna</li>
+<li>Divyansh Ahuja</li>
+<li>Jaideep Kharadi</li>
+<li>Abhijeet Verma</li>
+<li>Shailee Suryawanshi</li>
+<li>Deepanshu Koshta</li>
+<li>J S Mahesh</li>
+<li>Prachi Goel</li>
+<li>Kanak Vijay</li>
+<li>Muhammad Shoaib Iqbal</li>
+<li>Tangi Simmannaidu</li>
+<li>Utkarsh Bhalode</li>
+</ul>
+</li>
+<li>
+<p>Staff</p>
+<ul>
+<li>Mahesh Bhaganagare</li>
+<li>Amit Shetye</li>
+<li>Maheshwar Mangat</li>
+</ul>
+</li>
+<li>
+<p>Faculty</p>
+<ul>
+<li><a href="https://www.ee.iitb.ac.in/~sarva/">Saravanan Vijayakumaran</a></li>
+<li><a href="https://sites.google.com/site/nikhilkaram/home">Nikhil Karamchandani</a></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="labsheets-1"><a class="header" href="#labsheets-1">Labsheets</a></h1>
+<p>The labsheets in this section were meant for the Spring 2022 offering of EE337 Microprocessors Lab.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-1"><a class="header" href="#lab-1">Lab 1</a></h1>
+<p>See the resources in the <a href="archive/2022/labsheets//keil.html">Keil page</a> and attempt the experiments in the following lab sheet.  The link to the PORTSQ.ASM file is <a href="archive/2022/labsheets/./../downloads/PORTSQ.ASM">here</a></p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/5alThqoQMh4WXh" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2022/labsheets/./../downloads/lab1.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-2"><a class="header" href="#lab-2">Lab 2</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/qinz25SZsXBy9K" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2022/labsheets/./../downloads/lab2.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-3"><a class="header" href="#lab-3">Lab 3</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/vw84PeTnK0St4C" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2022/labsheets/./../downloads/lab3.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-4"><a class="header" href="#lab-4">Lab 4</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/Hna2txWTaU505S" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2022/labsheets/./../downloads/lab4.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-5"><a class="header" href="#lab-5">Lab 5</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/JutnMKk1zwA8LW" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2022/labsheets/./../downloads/lab5.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-6"><a class="header" href="#lab-6">Lab 6</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/1Kx2wgyp9hWxvu" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2022/labsheets/./../downloads/lab6.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-7"><a class="header" href="#lab-7">Lab 7</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/lWH5XFT9jUxgv6" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2022/labsheets/./../downloads/lab7.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-8"><a class="header" href="#lab-8">Lab 8</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/m4vCuDda9FhqEh" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2022/labsheets/./../downloads/lab8.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-9"><a class="header" href="#lab-9">Lab 9</a></h1>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/mXYKmmmczSdwTE" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2022/labsheets/./../downloads/lab9.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2021-course-pages"><a class="header" href="#2021-course-pages">2021 Course Pages</a></h1>
+<p>The pages in this chapter are from the Spring 2021 offering of the EE337 Microprocessors Lab course.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="course-overview--2021"><a class="header" href="#course-overview--2021">Course Overview  (2021)</a></h1>
+<p>This is the course webpage for the EE337 Microprocessors Lab course running in the <a href="https://www.ee.iitb.ac.in">Department of Electrical Engineering</a> of <a href="https://www.iitb.ac.in/">IIT Bombay</a>.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/4bqs5XHsdFWDTL" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above slide deck is available <a href="archive/2021/./downloads/EE337_Course_Introduction_2021.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="course-schedule-2"><a class="header" href="#course-schedule-2">Course Schedule</a></h1>
+<ul>
+<li>
+<p>Third year students</p>
+<ul>
+<li>Wednesdays, 2pm to 5pm</li>
+</ul>
+</li>
+<li>
+<p>Second year students</p>
+<ul>
+<li>Mondays, 2pm to 5pm</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="course-instructors-2"><a class="header" href="#course-instructors-2">Course Instructors</a></h1>
+<ul>
+<li>
+<p>Faculty</p>
+<ul>
+<li>Rajbabu Velmurugan</li>
+<li>Saravanan Vijayakumaran</li>
+<li>Sachin B. Patkar</li>
+<li>Dinesh K. Sharma</li>
+</ul>
+</li>
+<li>
+<p>Staff</p>
+<ul>
+<li>Mahesh Bhaganagare</li>
+<li>Ms. Madhumita Date</li>
+</ul>
+</li>
+<li>
+<p>Teaching Assistants</p>
+<ul>
+<li>Vaddi Reddy Joseph Jeevan Reddy</li>
+<li>Ekatpure Rutuja Dattatray </li>
+<li>Swadha Sanghvi </li>
+<li>Nilesh Baviskar </li>
+<li>Ashish Singhariya </li>
+<li>Devesh Kumar </li>
+<li>Bhuyashi Deka </li>
+<li>Rashmi R </li>
+<li>Sancho Simmy Louis </li>
+<li>Sabitha Susan Joseph </li>
+<li>Aditya Ajay Wani </li>
+<li>Gajulapalli Venkata Naga Dinesh Kumar </li>
+<li>Prashant Sharma </li>
+<li>Shah Vidur </li>
+<li>Nijil George </li>
+<li>Pampatwar Akshay </li>
+<li>Nihar Himanshu Shah </li>
+<li>Abhinav Sridhar Visalakshi </li>
+<li>Rohit Madhukar Kale </li>
+<li>Vikash Kumar </li>
+<li>Arjun Raj </li>
+<li>Sarvesh Shirish Kale </li>
+<li>Nikhil Ajith </li>
+<li>Vivekanand Ramrao Dhakane </li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="section-1-2nd-yr-ug"><a class="header" href="#section-1-2nd-yr-ug">Section 1 (2nd yr UG)</a></h1>
+<p>The labsheets in this section were meant for Section 1 of the Spring 2021 offering of EE337 Microprocessors Lab</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-1-1"><a class="header" href="#lab-1-1">Lab 1</a></h1>
+<p>See the resources in the <a href="archive/2021/s1//keil.html">Keil page</a> and attempt the experiments in the following lab sheet. </p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/eHqBMamvh9dhPy" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s1/./downloads/lab1-s1.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-2-1"><a class="header" href="#lab-2-1">Lab 2</a></h1>
+<p>Continuing to look at more instructions from the ISA of 8051.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/ySWhOdlv78ZXPi" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s1/./downloads/lab2-s1.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-3-1"><a class="header" href="#lab-3-1">Lab 3</a></h1>
+<p>Getting started with the Pt-51 kit and read/write to ports.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/K0FA7OSelCNjmI" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s1/./downloads/lab3-s1.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-4-1"><a class="header" href="#lab-4-1">Lab 4</a></h1>
+<p>Using the LCD interface with the Pt-51 kit.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/6vVnyQahYOCazK" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s1/./downloads/lab4-s1.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-5-1"><a class="header" href="#lab-5-1">Lab 5</a></h1>
+<p>Using Timers in 8051.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/45jUirHW080CEs" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s1/./downloads/lab5-s1.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-6-1"><a class="header" href="#lab-6-1">Lab 6</a></h1>
+<p>More on using Timers in 8051.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/NJXJC0X0hb8eAB" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s1/./downloads/lab6-s1.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-7-1"><a class="header" href="#lab-7-1">Lab 7</a></h1>
+<p>Using UART to interface computer's keyboard and Pt-51 kit.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/wRQbUsLKcN7aUO" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s1/./downloads/lab7-s1.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-8-1"><a class="header" href="#lab-8-1">Lab 8</a></h1>
+<p>Interfacing ADC using SPI with 8051.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/oxuCpDtYwT9OyP" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s1/./downloads/lab8-s1.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="section-2-3rd-yr-ug"><a class="header" href="#section-2-3rd-yr-ug">Section 2 (3rd yr UG)</a></h1>
+<p>The labsheets in this section were meant for Section 2 of the Spring 2021 offering of EE337 Microprocessors Lab</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-1-2"><a class="header" href="#lab-1-2">Lab 1</a></h1>
+<p>See the resources in the <a href="archive/2021/s2//keil.html">Keil page</a> and attempt the experiments in the following lab sheet. </p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/nEcRhGSdxQdSLz" width="668" height="900" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s2/./downloads/lab1-s2.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-2-2"><a class="header" href="#lab-2-2">Lab 2</a></h1>
+<p>Get more familiar with the instruction set of 8051.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/tXxhSJdTJpg9dp" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s2/./downloads/lab2-s2.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-3-2"><a class="header" href="#lab-3-2">Lab 3</a></h1>
+<p>Getting started with the Pt-51 kit and simple port interactions.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/6RV6wKCSunb2en" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s2/./downloads/lab3-s2.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-4-2"><a class="header" href="#lab-4-2">Lab 4</a></h1>
+<p>Using the LCD with the Pt-51 kit.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/bCDpidg6tIByY" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s2/./downloads/lab4-s2.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-5-2"><a class="header" href="#lab-5-2">Lab 5</a></h1>
+<p>Using Timers in 8051.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/JuBBfYXUDbEaYb" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s2/./downloads/lab5-s2.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-6-2"><a class="header" href="#lab-6-2">Lab 6</a></h1>
+<p>More on using Timers in 8051.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/4ForAnMX4YdVjO" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s2/./downloads/lab6-s2.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-7-2"><a class="header" href="#lab-7-2">Lab 7</a></h1>
+<p>Computer keyboard interfacing with 8051 using UART.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/JSLMvjEmtPeA1g" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s2/./downloads/lab7-s2.pdf">here</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lab-8-2"><a class="header" href="#lab-8-2">Lab 8</a></h1>
+<p>Interfacing ADC using SPI with 8051.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/3VOKc78EIbXj0T" width="668" height="714" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<p>The pdf of the above lab sheet is available <a href="archive/2021/s2/./downloads/lab8-s2.pdf">here</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </body>
+</html>
